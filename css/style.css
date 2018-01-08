@@ -71,6 +71,23 @@ color: #cccccc;
 font-weight: bold;
 }
 
+/*
+
+Тестовый блок
+
+*/
+
+
+.container#test{
+
+	background: green;
+	color: red;
+}
+
+/*
+конец тестового блока
+*/
+
 /*main body*/
 .container{
 
@@ -80,6 +97,7 @@ font-weight: bold;
 	background:#cc9a07;/*#ff9622; /*#066873;*/
 	overflow: hidden;
 	margin:auto;
+	
 }
 
 #branding h1{
@@ -146,7 +164,16 @@ font-weight: bold;
 	min-height: 300px;
 	width: 70%;
 	float: left;
-	/*background: green;*/
+
+	
+	
+}
+.container#productp{
+	height:auto;
+	width: 100%;
+	float: left;
+	text-align: center;
+	
 	
 	
 }
@@ -180,6 +207,11 @@ font-weight: bold;
 	/*display: none;*/
 	/*background: red;*/
 	
+}
+
+#map
+{
+	outline: 4px solid #07cc98;
 }
 
 /*boxes*/
@@ -216,6 +248,38 @@ text-align: center;
 	text-transform: uppercase;
 	color:#ffffff;
 }
+/* boxes products*/
+
+.boxp{
+width: 20%;
+float: left;
+text-align: center;
+}
+
+.boxp img{
+	margin-top: 10px;
+	width: 80%;
+	outline: 3px solid #ffffff;
+}
+
+.boxp img:hover {
+	
+	outline: 3px solid #07cc98;
+
+}
+.boxp a:hover {
+	
+	color:#07cc98;
+
+}
+
+.boxp a {
+
+	text-transform: uppercase;
+	color:#ffffff;
+}
+
+
 /*aside*/
 
 
@@ -228,6 +292,23 @@ iframe {
 	align-self: stretch;*/
 }
 
+/*class certificate*/
+/*.certificate img:hover
+{
+
+	width: 485px;
+	height: auto;
+	outline: 3px solid red;
+}*/
+
+.certificate img {
+	cursor: pointer;
+	max-width: 100px;
+	/*outline: 3px solid #07cc98;*/
+}
+
+
+
 
 /*footer*/
 
@@ -236,6 +317,7 @@ footer{
 	
 	color: #07cc98;/*#ffffff;*/
 	text-align: center;
+	
 	
 }
 
