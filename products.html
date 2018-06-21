@@ -4,6 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name = "viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<!-- script to top button -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').append('<div id="toTop">ВВЕРХ</div>');
+				$(window).scroll(function() {
+					if($(this).scrollTop() > 200) {
+						$('#toTop').fadeIn();	
+					} else {
+						$('#toTop').fadeOut();
+					}
+					});
+	 
+					$('#toTop').click(function() {
+					$('body, html').animate({scrollTop: 0}, 800);
+			});	
+		});
+	</script>
+	
 	<title>Технокараван | Продукция</title>
 </head>
 <body>
@@ -109,43 +128,43 @@
 		<div class="container">
 			<div class="boxp">
 			<br>	
-			<a href=""><img src="./img/bearing.png"></a>	<br>
-			<a href="#">Подшипники</a>
+			<a href="wip.html"><img src="./img/bearing.png"></a>	<br>
+			<a href="wip.html">Подшипники</a>
 				<br>		
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-			<a href="#">	<img src="./img/belts.png"> </a>
+			<a href="./data/belts.html">	<img src="./img/belts.png"> </a>
 			<br>
-			<a href="#">Ремни</a>
+			<a href="./data/belts.html">Ремни</a>
 			<br>
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/simmering.png"></a>
+				<a href="./data/seal.html"><img src="./img/simmering.png"></a>
 				<br>
-				<a href="#">Сальники</a>
+				<a href="./data/seal.html">Манжеты армированные (Сальники)</a>
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/chain.png"></a>
+				<a href="wip.html"><img src="./img/chain.png"></a>
 				<br>
-				<a href="#">Цепи</a>
+				<a href="wip.html">Цепи</a>
 				<br><br><br>
 							
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/stopor.png"></a>
+				<a href="./data/lockring.html"><img src="./img/stopor.png"></a>
 				<br>
-				<a href="#">Стопорные кольца</a>
+				<a href="./data/lockring.html">Стопорные кольца</a>
 				<br><br><br>
 							
 			</div>
@@ -159,43 +178,43 @@
 		<div class="container">
 			<div class="boxp">
 			<br>	
-			<a href=""><img src="./img/rvd.png"></a>	<br>
-			<a href="#">РВД</a>
+			<a href="wip.html"><img src="./img/rvd.png"></a>	<br>
+			<a href="wip.html">РВД</a>
 				<br>		
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-			<a href="#">	<img src="./img/karchers.png"> </a>
+			<a href="wip.html">	<img src="./img/karchers.png"> </a>
 			<br>
-			<a href="#">Оборудование KARCHER</a>
+			<a href="wip.html">Оборудование KARCHER</a>
 			<br>
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/handpalletrack.png"></a>
+				<a href="./data/handpallet.html"><img src="./img/handpalletrack.png"></a>
 				<br>
-				<a href="#">Тележки гидравлические </a>
+				<a href="./data/handpallet.html">Тележки гидравлические </a>
 			
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/forkliftparts.png"></a>
+				<a href="wip.html"><img src="./img/forkliftparts.png"></a>
 				<br>
-				<a href="#">Запасные части к автопогрузчикам</a>
+				<a href="wip.html">Запасные части к автопогрузчикам</a>
 				<br><br><br>
 							
 			</div>
 
 			<div class="boxp">
 					<br>
-				<a href="#"><img src="./img/rparts.png"></a>
+				<a href="wip.html"><img src="./img/rparts.png"></a>
 				<br>
-				<a href="#">Прочее...</a>
+				<a href="wip.html">Прочее...</a>
 				<br><br><br>
 							
 			</div>

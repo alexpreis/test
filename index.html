@@ -4,6 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name = "viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+
+	<!-- script to top button -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').append('<div id="toTop">ВВЕРХ</div>');
+				$(window).scroll(function() {
+					if($(this).scrollTop() > 200) {
+						$('#toTop').fadeIn();	
+					} else {
+						$('#toTop').fadeOut();
+					}
+					});
+	 
+					$('#toTop').click(function() {
+					$('body, html').animate({scrollTop: 0}, 800);
+			});	
+		});
+	</script>
+
 	<title>Технокараван | Главная</title>
 </head>
 <body>
@@ -161,25 +182,25 @@
 			<div class="box">
 			<br>	
 			<a href=""><img src="./img/bearing.png"></a>	
-			<a href="#">Подшипники</a>
+			<a href="wip.html">Подшипники</a>
 				<br>		
 			
 			</div>
 
 			<div class="box">
 					<br>
-			<a href="#">	<img src="./img/rvd.png"> </a>
+			<a href="wip.html">	<img src="./img/rvd.png"> </a>
 			<br>
-			<a href="#"> Рукава высокого давления</a>
+			<a href="wip.html"> Рукава высокого давления</a>
 			<br>
 			
 			</div>
 
 			<div class="box">
 					<br>
-				<a href="#"><img src="./img/belts.png"></a>
+				<a href="./data/belts.html"> <img src="./img/belts.png"></a>
 				<br>
-				<a href="#">Ремни приводные</a>
+				<a href="./data/belts.html"> Ремни приводные </a>
 			
 			</div>
 
