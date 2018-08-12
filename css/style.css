@@ -235,12 +235,25 @@ text-align: center;
 .box img:hover {
 	
 	outline: 3px solid #07cc98;
+	
 
 }
 .box a:hover {
 	
 	color:#07cc98;
+	
+}
 
+.box#B img:hover {
+	
+	outline: 3px solid WHITE;
+	
+
+}
+.box#B a:hover {
+	
+	color:WHITE;
+	
 }
 
 .box a {
@@ -270,6 +283,18 @@ text-align: center;
 .boxp a:hover {
 	
 	color:#07cc98;
+
+}
+
+
+.boxp#B img:hover {
+	
+	outline: 3px solid WHITE;
+
+}
+.boxp#B a:hover {
+	
+	color:WHITE;
 
 }
 
