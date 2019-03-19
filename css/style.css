@@ -433,7 +433,63 @@ iframe {
 
 
 
+/*lists delivery*/
 
+.list2b {
+    margin-bottom: 8px;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}    
+.list2b li {
+    position: relative;
+    border: 2px solid #DDDDDD;
+    background: #ff9622;/*RED;*/
+    padding:16px 20px 16px 28px;
+    margin:12px 0 12px 40px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.list2b li:hover {
+    background: #FF9622;/*#F0F5FB;*/
+    border: 2px solid #ADCEE9;
+}
+.list2b li:before {
+    line-height: 32px;
+    position: absolute;
+    top: 4px;
+    left:-40px;
+    width:40px;
+    text-align:center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background: GREEN;/*#77AEDB;*/
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.list2b li:hover:before {
+    width:46px;
+    background: #62fcff;/*#337AB7;*/
+}
+.list2b li:after {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 16px solid transparent;
+    border-left-color: GREEN;/*#77AEDB;*/
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s
+}
+.list2b li:hover:after {
+    margin-left: 6px;
+    border-left-color: #62fcff;/*#337AB7;*/
+}
 
 
 /*footer*/
