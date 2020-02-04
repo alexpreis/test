@@ -1,1 +1,61 @@
-$background_color #F2DFBB
+$background-color : #FF9622;
+$test-color-0 : #0000ff;
+$test-color-1 : #a0ff0a;
+$test-color-2: #00dd0a;
+$test-color-3 : #a0dd00;
+$p-color : #FF0000;
+
+*{
+
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;	
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	/*background: #F2DFBB;*/
+	/*background-image: url(../img/gearsbackgroundfon.jpg);*/
+	
+}
+/*header*/
+
+header {
+	
+	background: transparent;	/*#F2DFBB;*/
+	color: 		green;		/*#D97639;*/
+	min-height: 80px;
+	
+}
+
+
+nav {
+	background-color: $background-color;
+	a
+		{color : $p-color;
+		 font-weight : normal;
+		 font-style : italic;
+		 font-size : 1.2em;
+		}
+}
+
+.test-0{
+
+background-color : $test-color-0;
+}
+
+.test-1{
+
+background-color : $test-color-1;
+}
+.test-2{
+
+background-color : $test-color-2;
+}
+.test-3{
+
+background-color : $test-color-3;
+}
