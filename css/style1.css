@@ -1,6 +1,13 @@
+#addres h2, #addres p, .contacts-con, .footer {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 900; }
+
 * {
   margin: 0;
   padding: 0; }
+
+#red {
+  background_color: red; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -8,24 +15,93 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  /*background: #F2DFBB;*/
-  /*background-image: url(../img/gearsbackgroundfon.jpg);*/ }
+  background-color: #FF9622; }
+  body hr {
+    margin-top: 1px;
+    margin-bottom: 1px; }
 
 /*header*/
 header {
   background: transparent;
   /*#F2DFBB;*/
-  color: green;
+  /*color: 		$text-color-main;*/
   /*#D97639;*/
   min-height: 80px; }
 
 nav {
   background-color: #FF9622; }
   nav a {
-    color: #FF0000;
+    color: #e8491d;
     font-weight: normal;
     font-style: italic;
-    font-size: 1.2em; }
+    font-size: 1.05em; }
+  nav a:hover {
+    color: #cccccc !important;
+    font-weight: bold; }
+
+.nav-item a {
+  color: #FF0000; }
+
+.ico {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle; }
+
+#addres h2 {
+  font-size: 200%;
+  color: #FFFFFF;
+  margin-left: 20px; }
+
+#addres p {
+  font-size: 100%;
+  color: #FFFFFF;
+  margin-left: 30px; }
+
+.contacts-con {
+  font-style: italic;
+  color: #FFFFFF; }
+
+#text-main-page {
+  color: #FFFFFF;
+  font-style: italic;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  #text-main-page h4 {
+    font-size: 1.3em;
+    padding: 10px; }
+  #text-main-page ul {
+    font-size: 1.1em;
+    margin-left: 4em; }
+  #text-main-page p {
+    font-size: 1.1em;
+    padding: 10px; }
+
+.list-group-item {
+  padding: 1px;
+  margin: 5px;
+  background-color: #cc9a07; }
+
+.container-fluid {
+  background-color: #cc9a07;
+  color: #FFFFFF; }
+
+.card-body {
+  background-color: #cc9a07;
+  color: #FFFFFF; }
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 10px; }
+
+.card:hover {
+  border-color: #FFFFFF;
+  border-width: 3px;
+  border-radius: 10px; }
+
+.footer {
+  background-color: #FF9622; }
 
 .test-0 {
   background-color: #0000ff; }

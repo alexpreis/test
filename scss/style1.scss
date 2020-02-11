@@ -1,14 +1,36 @@
-$background-color : #FF9622;
-$test-color-0 : #0000ff;
-$test-color-1 : #a0ff0a;
-$test-color-2: #00dd0a;
-$test-color-3 : #a0dd00;
-$p-color : #FF0000;
+$background-color-nav :  #FF9622; //nav bar color
+$text-color-nav-main : #e8491d;
+$text-color-nav-hover : #cccccc;
+
+$background-color-main : #cc9a07; 
+$text-color-main : #FFFFFF; //main text color WHITE
+
+
+$test-color-0 : #0000ff;//color for testing
+$test-color-1 : #a0ff0a	;//color for testing
+$test-color-2: #00dd0a;//color for testing
+$test-color-3 : #a0dd00;//color for testing
+$p-color : #FF0000; //RED color for testing
+
+
+%text-shadows{
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	font-weight: 900;
+	
+}
 
 *{
 
 	margin: 0;
 	padding: 0;
+
+}
+
+
+
+
+#red{
+	background_color: red;
 }
 
 body{
@@ -17,29 +39,148 @@ body{
 	line-height: 1.5;
 	padding: 0;
 	margin: 0;
-	/*background: #F2DFBB;*/
-	/*background-image: url(../img/gearsbackgroundfon.jpg);*/
-	
+	background-color: $background-color-nav;
+
+
+	hr {
+		margin-top : 1px;
+		margin-bottom: 1px;
+	}	
 }
 /*header*/
 
 header {
 	
 	background: transparent;	/*#F2DFBB;*/
-	color: 		green;		/*#D97639;*/
+	/*color: 		$text-color-main;*/		/*#D97639;*/
 	min-height: 80px;
 	
 }
 
 
+
+
 nav {
-	background-color: $background-color;
+	background-color: $background-color-nav;
+
 	a
-		{color : $p-color;
+		{color : $text-color-nav-main ;//!important;
 		 font-weight : normal;
 		 font-style : italic;
-		 font-size : 1.2em;
+		 font-size : 1.05em;
 		}
+	a:hover{
+		color : $text-color-nav-hover !important;
+		font-weight : bold ;//!important;	
+	}
+
+
+}
+.nav-item a 
+ {
+	color: $p-color;
+}
+
+.ico{
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+	}
+
+
+
+
+#addres h2
+{
+	@extend %text-shadows; 
+	font-size: 200%;
+	color : $text-color-main;
+	margin-left: 20px;
+	
+	
+}
+
+#addres p
+{
+	@extend %text-shadows;  
+	font-size: 100%;
+	color : $text-color-main;
+	margin-left: 30px;
+	
+}
+
+.contacts-con {
+	@extend %text-shadows;
+	font-style : italic;
+	color : $text-color-main;	
+}
+
+#text-main-page{
+	color :  $text-color-main;
+	font-style: italic;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+//background-color: $p-color;
+	h4 {	
+		font-size: 1.3em; 
+		padding:10px;
+			
+		}
+
+
+	ul {
+		//padding : 20px;
+		font-size: 1.1em;
+		margin-left:4em;
+
+	}
+	p{
+		font-size: 1.1em;
+		padding:10px;
+	}
+}
+
+
+.list-group-item{
+	padding : 1px;
+	margin : 5px;
+	background-color: $background-color-main;
+}
+
+.container-fluid
+{
+	background-color : $background-color-main; 
+	color : $text-color-main;
+	
+}
+
+.card-body{
+		
+	background-color: $background-color-main;
+	color : $text-color-main;
+}
+
+.card {
+	margin-top : 10px;
+	margin-bottom: 10px;
+	border-color : $text-color-nav-hover;
+	border-width: 2px;
+	border-radius: 10px;
+	}
+
+.card:hover {
+	border-color : $text-color-main;
+	border-width: 3px;
+	border-radius: 10px;
+	}
+
+
+
+
+.footer{
+
+	@extend %text-shadows;
+	
+	background-color: $background-color-nav;
 }
 
 .test-0{
