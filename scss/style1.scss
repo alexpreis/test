@@ -40,6 +40,10 @@ body{
 	padding: 0;
 	margin: 0;
 	background-color: $background-color-nav;
+	 -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 
 
 	hr {

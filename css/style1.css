@@ -4,8 +4,7 @@
 
 * {
   margin: 0;
-  padding: 0; 
-	box-sizing: border-box;}
+  padding: 0; }
 
 #red {
   background_color: red; }
@@ -16,7 +15,11 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-color: #FF9622; }
+  background-color: #FF9622;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
   body hr {
     margin-top: 1px;
     margin-bottom: 1px; }
