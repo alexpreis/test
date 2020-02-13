@@ -86,7 +86,9 @@ nav {
 
 .container-fluid {
   background-color: #cc9a07;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding-left: 0px;
+  padding-right: 0px; }
 
 .card-body {
   background-color: #cc9a07;
@@ -108,6 +110,12 @@ nav {
   background-color: #FF9622; }
 
 /*totop button*/
+/* products.html specific */
+#expect {
+  font-size: 1.4em; }
+
+/* end products.html specific*/
+/* only for testing purpose*/
 .test-0 {
   background-color: #0000ff; }
 
