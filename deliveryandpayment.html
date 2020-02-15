@@ -3,124 +3,199 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name = "viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/style1.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-
-	<!-- script to top button -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('body').append('<div id="toTop">ВВЕРХ</div>');
-				$(window).scroll(function() {
-					if($(this).scrollTop() > 200) {
-						$('#toTop').fadeIn();	
-					} else {
-						$('#toTop').fadeOut();
-					}
-					});
-	 
-					$('#toTop').click(function() {
-					$('body, html').animate({scrollTop: 0}, 800);
-			});	
-		});
-	</script>
-
-	<title>Технокараван | Доставка и оплата</title>
+	<title>Технокараван | Услуги</title>
 </head>
+
+<nav class="navbar navbar-expand-sm navbar-light">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon">  </span>
+
+  </button>
+
+   <a class="navbar-brand d-none d-sm-block" href="#">
+    <img src="./img/camelsy.png" width="60" height="60" alt="ООО ТЕХНОКАРАВАН">
+  </a>       
+
+  <a class="navbar-brand" href="#"></a>
+
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+
+    <ul class="navbar-nav  ml-auto mt-2 mt-md-10">
+
+      <li class="nav-item ">
+        <a class="nav-link " href="index.html"> Главная </a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link " href="products.html">Продукция</a>
+      </li>
+
+   	 <li class="nav-item ">
+        <a class="nav-link " href="service.html">Услуги</a>
+      </li>
+
+      <li class="nav-item contacts-con">
+        <a class="nav-link" href="deliveryandpayment.html">Оплата и доставка</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link " href="contacts.html">Контакты</a>
+      </li>
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- bar w contacts-->
+
+
 <body>
-	<header>
-		<DIV class="container" id="header">
-			<!--<p>"Контейнер 1"</p>-->
-			<div id="branding">
-			<!--	<h1>ООО ТЕХНОКАРАВАН 1</h1> -->
-				 <img src="./img/camelsy.png">
-				 <!--<img src="./img/logocamels.png"> -->
-			</div>
-				<nav>
-					
-					<ul>
-						<li> <a href="index.html">Главная</a></li>
-						<li><a href="products.html">Продукция</a></li>
-						<li><a href="service.html">Услуги</a></li>
-						<li class="current"><a href=#>Доставка и оплата</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-
-				</nav>
-	</DIV>
-</header>
-
-<hr>
-
-
-	<section>
-		<div class="container">
-		<!-- верхняя барка с контактами -->
-
-			<div class="container" id="indexcon2">
+	<div class="container-fluid ">
+		<div class ="row">
+			<div class = "col-md-5 d-flex flex-wrap align-content-center ">
 				<div class="contacts" id = "addres">
-					<h2> ООО "ТЕХНОКАРАВАН"</h2>
+					<h2> <i>ООО "ТЕХНОКАРАВАН"</i></h2>
 					<p><img class = "ico" src="./img/ico/evolution1.png" title = "Почтовый адрес" alt="Почта">
-					210017, г.Витебск , ул.Гагарина 68
+						<i>210017, г.Витебск , ул.Гагарина 68 </i>
 					</p>
-					
-				</div>
+				</div>	
 			</div>
 
-			<div class="container" id="indexcon3">
+
+
+
+			<div class = "col-md ">
 				<div class="contacts">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<span class= "sr-only" >Городской </span>	
 					<p>
-						 <img class = "ico" src="./img/ico/phone.png" title = "Телефон" alt="Телефон"> 
+						<span class="d-inline float-left">
+						 <img class = "ico d-md-none d-lg-block" src="./img/ico/phone.png" title = "Телефон" alt="Телефон">
+						 </span> 
+						 <span class = "contacts-con">
 						 +375 212 366 000
+						 </span>
 					</p>
+				</li>
+				<li class="list-group-item">
+					<span class= "sr-only" >Факс</span>
 					<p>
-						<img class = "ico" src="./img/ico/faxsm.png" title = "Факс" alt="Факс">
+						<span class="d-inline float-left">
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/faxsm.png" title = "Факс" alt="Факс">
+					</span>
+					<span class = "contacts-con">
 						+375 212 36 63 71 
+					</span>
 					</p>
-				<p>
-						<img class = "ico" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
-						+375 33 677 25 61
-				</p>
+				</li>
+				<li class="list-group-item">
+				<span class= "sr-only" >МТС</span>	
 					<p>
-						<img class = "ico" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+						<span class="d-inline float-left " >
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+					</span>
+					<span class = "contacts-con">
+						+375 33 677 25 61
+					</span>
+					</p>
+				</li>	
+				<li class="list-group-item">
+					<span class= "sr-only" >МТС</span>
+					<p>
+						<span class="d-inline float-left">
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+					</span>
+					<span class = "contacts-con">
 						+375 29 710 17 88
-				</p>
-				</div>
+					</span>
 
+					</p>
+				</li>
+			</ul>
+				</div>
+				
+			</div>
+			<div class = "col-md ">
+
+				<ul class="list-group list-group-flush">
+  						<li class="list-group-item">
+  						<span class= "sr-only" >Skype</span>
+  							<p>
+  								<span class="d-inline float-left">
+						 		<img class = "ico d-md-none d-lg-block" src="./img/ico/skype.png" title = "Skype" alt="Skype">
+						 		</span>
+						 		<span class = "contacts-con"> 
+						 		tera_44
+						 	</span>
+							</p>
+  					    </li>
+  						<li class="list-group-item ">
+  						<span class= "sr-only" >Viber</span>
+  							<p>
+  								<span class="d-inline float-left">
+								<img class = "ico d-md-none d-lg-block" src="./img/ico/viber.png" title = "Viber" alt="Viber">
+							</span>
+								<span class = "contacts-con">
+								+376 33 677 25 61
+							</span>
+
+							</p>
+
+
+  						</li>
+
+  						<li class="list-group-item">
+  							 <span class= "sr-only" >E-mail</span>
+  							<p>
+							<span class="d-inline float-left"><img class = "ico d-md-none d-lg-block" src="./img/ico/email.png" title = "email" alt="email"></span>
+
+							<span class = "contacts-con">
+							tehnokaravan@gmail.com
+						</span>
+							</p>
+
+  						</li>
+  
+				</ul>
+
+				
 			</div>
 
-			<div class="container" id= "indexcon4">
-				<div class="contacts">
-					<p>
-						 <img class = "ico" src="./img/ico/skype.png" title = "Skype" alt="Skype"> 
-						 <i>tera_44</i>
-					</p>
-					<p>
-						<img class = "ico" src="./img/ico/viber.png" title = "Viber" alt="Viber">
-						+375 33 677 25 61
-					</p>
-					<p>
-						<img class = "ico" src="./img/ico/whatsapp.png" title = "Whatsapp" alt="Whatsapp">
-						+375 29 711 97 23
-					</p>
-
-					<p>
-						<img class = "ico" src="./img/ico/email.png" title = "email" alt="email">
-						<i>tehnokaravan@gmail.com</i>
-					</p>
-				</div>
-			</div>		
 		</div>
-	</section>
+	</div>
+
+<!-- end bar w contacs -->	
 
 	<hr>
-	
-	<div class="container">
+
+<!-- ************************************************ -->
+
+
+
+<!--***************************************************** -->
+
+
+		<hr>
+<!-- cards begin --> 
+
+
+	<div class="container-fluid">
 	<article>
 		<div class="container">
-			<h2> <center>СПОСОБЫ ОПЛАТЫ</center>  
+			<h2 class = "contacts-con"> <center>СПОСОБЫ ОПЛАТЫ</center>  
 			</h2>
-			<h3> Для юридических лиц и ИП:</h3>
+			<h3 class = "contacts-con"> Для юридических лиц и ИП:</h3>
 
 			<div>
 				<ul class = "list2b">
@@ -141,15 +216,11 @@
 
 			<br>
 
-			<p> Банковские реквизиты:
+			<p class= "contacts-con"> Банковские реквизиты:
 			</p>
 			<p>
-				ОАО "БПС- СБЕРБАНК"
-			</p>
-			<p>
-				р/с BY63 BPSB 3012 1630 0001 9933 0000
-			</p>
-			<p>
+				РД 200 ОАО "БПС- СБЕРБАНК"<br>
+				р/с BY63 BPSB 3012 1630 0001 9933 0000<br>
 				BIC: BPSBBY2X
 			</p>
 							
@@ -158,7 +229,7 @@
 				УНП: 391 387 756
 			</p>		<br>
 
-			<h3> Для физических лиц:</h3>	
+			<h3 class = "contacts-con"> Для физических лиц:</h3>	
 
 			<p>
 				Мы не принимаем наличную оплату, оплату карточками или через систему ЕРИП от физических лиц.
@@ -186,9 +257,8 @@
 			<br><br><br>			
 	</div>
 	</article>
-
-	<article>
-		<div class="container" >
+	
+		<div class="container-fluid contacts-con" >
 			<h2><center> ДОСТАВКА </center>
 			</h2>
 
@@ -197,33 +267,29 @@
 			</p>
 
 			<p>
-				Доставку+ продукции по Республике Беларусь осуществляем курьерской службой ДПД Бел.
+				Доставку продукции по Республике Беларусь осуществляем курьерской службой ДПД Бел.
 
 			</p>
 
-			<br><br><br><br>
-
-							
-
+			<br>
 								
 	</div>
-	</article>
+
 
 	
 </div>
 	<hr>
-	
-
-	<hr>
-
-
+  
 
 		<footer>
-			<div class="container" id="footer">
-				<p>
-					&copy; ООО Технокараван 2017 г.Витебск +375 212 366-000
+			<div class="container-fluid footer contacts-con">
+				<p> 
+					<center>&copy; ООО Технокараван 2020 г.Витебск +375 212 366-000</center>
 				</p>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
