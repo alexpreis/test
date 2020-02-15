@@ -73,7 +73,8 @@ nav {
     margin-left: 4em; }
   #text-main-page p {
     font-size: 1.1em;
-    padding: 10px; }
+    padding: 10px;
+    margin-bottom: 0px !important; }
 
 .list-group-item {
   padding: 1px;
