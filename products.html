@@ -3,268 +3,353 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name = "viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<!-- script to top button -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('body').append('<div id="toTop">ВВЕРХ</div>');
-				$(window).scroll(function() {
-					if($(this).scrollTop() > 200) {
-						$('#toTop').fadeIn();	
-					} else {
-						$('#toTop').fadeOut();
-					}
-					});
-	 
-					$('#toTop').click(function() {
-					$('body, html').animate({scrollTop: 0}, 800);
-			});	
-		});
-	</script>
-	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/style1.css">
+
 	<title>Технокараван | Продукция</title>
 </head>
+
+<nav class="navbar navbar-expand-sm navbar-light">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon">  </span>
+
+  </button>
+
+   <a class="navbar-brand d-none d-sm-block" href="#">
+    <img src="./img/camelsy.png" width="60" height="60" alt="ООО ТЕХНОКАРАВАН">
+  </a>       
+
+  <a class="navbar-brand" href="#"></a>
+
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+
+    <ul class="navbar-nav  ml-auto mt-2 mt-md-10">
+
+      <li class="nav-item ">
+        <a class="nav-link " href="#"> Главная </a>
+      </li>
+
+      <li class="nav-item contacts-con">
+        <a class="nav-link " href="products.html">Продукция</a>
+      </li>
+
+   	 <li class="nav-item ">
+        <a class="nav-link " href="service.html">Услуги</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="deliveryandpayment.html">Оплата и доставка</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link " href="contacts.html">Контакты</a>
+      </li>
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- bar w contacts-->
+
+
 <body>
-	<header>
-		<DIV class="container" id="header">
-			<!--<p>"Контейнер 1"</p>-->
-			<div id="branding">
-			<!--	<h1>ООО ТЕХНОКАРАВАН 1</h1> -->
-				 <img src="./img/camelsy.png">
-				 <!--<img src="./img/logocamels.png"> -->
-			</div>
-				<nav>
-					
-					<ul>
-						<li> <a href="index.html">Главная</a></li>
-						<li class="current"><a href="products.html">Продукция</a></li>
-						<li><a href="service.html">Услуги</a></li>
-						<li><a href="deliveryandpayment.html">Доставка и оплата</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-
-				</nav>
-	</DIV>
-</header>
-
-<hr>
-
-
-	<section>
-		<div class="container">
-		<!-- верхняя барка с контактами -->
-
-			<div class="container" id="indexcon2">
+	<div class="container-fluid ">
+		<div class ="row">
+			<div class = "col-md-5 d-flex flex-wrap align-content-center ">
 				<div class="contacts" id = "addres">
-					<h2> ООО "ТЕХНОКАРАВАН"</h2>
+					<h2> <i>ООО "ТЕХНОКАРАВАН"</i></h2>
 					<p><img class = "ico" src="./img/ico/evolution1.png" title = "Почтовый адрес" alt="Почта">
-					210017, г.Витебск , ул.Гагарина 68
+						<i>210017, г.Витебск , ул.Гагарина 68 </i>
 					</p>
-					
-				</div>
+				</div>	
 			</div>
 
-			<div class="container" id="indexcon3">
+
+
+
+			<div class = "col-md ">
 				<div class="contacts">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<span class= "sr-only" >Городской </span>	
 					<p>
-						 <img class = "ico" src="./img/ico/phone.png" title = "Телефон" alt="Телефон"> 
-						 +375 212 432 000
+						<span class="d-inline float-left">
+						 <img class = "ico d-md-none d-lg-block" src="./img/ico/phone.png" title = "Телефон" alt="Телефон">
+						 </span> 
+						 <span class = "contacts-con">
+						 +375 212 366 000
+						 </span>
 					</p>
+				</li>
+				<li class="list-group-item">
+					<span class= "sr-only" >Факс</span>
 					<p>
-						<img class = "ico" src="./img/ico/faxsm.png" title = "Факс" alt="Факс">
-						+375 212 43 13 71 
+						<span class="d-inline float-left">
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/faxsm.png" title = "Факс" alt="Факс">
+					</span>
+					<span class = "contacts-con">
+						+375 212 36 63 71 
+					</span>
 					</p>
-				<p>
-						<img class = "ico" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+				</li>
+				<li class="list-group-item">
+				<span class= "sr-only" >МТС</span>	
+					<p>
+						<span class="d-inline float-left " >
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+					</span>
+					<span class = "contacts-con">
 						+375 33 677 25 61
-				</p>
+					</span>
+					</p>
+				</li>	
+				<li class="list-group-item">
+					<span class= "sr-only" >МТС</span>
 					<p>
-						<img class = "ico" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+						<span class="d-inline float-left">
+						<img class = "ico d-md-none d-lg-block" src="./img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+					</span>
+					<span class = "contacts-con">
 						+375 29 710 17 88
-				</p>
-				</div>
+					</span>
 
+					</p>
+				</li>
+			</ul>
+				</div>
+				
+			</div>
+			<div class = "col-md ">
+
+				<ul class="list-group list-group-flush">
+  						<li class="list-group-item">
+  						<span class= "sr-only" >Skype</span>
+  							<p>
+  								<span class="d-inline float-left">
+						 		<img class = "ico d-md-none d-lg-block" src="./img/ico/skype.png" title = "Skype" alt="Skype">
+						 		</span>
+						 		<span class = "contacts-con"> 
+						 		tera_44
+						 	</span>
+							</p>
+  					    </li>
+  						<li class="list-group-item ">
+  						<span class= "sr-only" >Viber</span>
+  							<p>
+  								<span class="d-inline float-left">
+								<img class = "ico d-md-none d-lg-block" src="./img/ico/viber.png" title = "Viber" alt="Viber">
+							</span>
+								<span class = "contacts-con">
+								+376 33 677 25 61
+							</span>
+
+							</p>
+
+
+  						</li>
+
+  						<li class="list-group-item">
+  							 <span class= "sr-only" >E-mail</span>
+  							<p>
+							<span class="d-inline float-left"><img class = "ico d-md-none d-lg-block" src="./img/ico/email.png" title = "email" alt="email"></span>
+
+							<span class = "contacts-con">
+							tehnokaravan@gmail.com
+						</span>
+							</p>
+
+  						</li>
+  
+				</ul>
+
+				
 			</div>
 
-			<div class="container" id= "indexcon4">
-				<div class="contacts">
-					<p>
-						 <img class = "ico" src="./img/ico/skype.png" title = "Skype" alt="Skype"> 
-						 <i>tera_44</i>
-					</p>
-					<p>
-						<img class = "ico" src="./img/ico/viber.png" title = "Viber" alt="Viber">
-						+375 33 677 25 61
-					</p>
-					<p>
-						<img class = "ico" src="./img/ico/whatsapp.png" title = "Whatsapp" alt="Whatsapp">
-						+375 29 711 97 23
-					</p>
-
-					<p>
-						<img class = "ico" src="./img/ico/email.png" title = "email" alt="email">
-						<i>tehnokaravan@gmail.com</i>
-					</p>
-				</div>
-			</div>		
 		</div>
-	</section>
+	</div>
+
+<!-- end bar w contacs -->	
 
 	<hr>
-	
-	<div class="container">
-	
-		<div class="container" id="productp">
-			<h2>Мы готовы Вам предложить</h2>			
-								
-		</div>
-	
 
+<!-- ************************************************ -->
+
+<div class = "container-fluid ">
+	<center>
+		<span class = "contacts-con" style="font-size: 1.4em;">
+	 Мы готовы Вам предложить:
+		</span>
+	</center>	
 	
 </div>
-	<hr>
-	<section id= "boxes">
-		<div class="container">
-			<div class="boxp" id ="B">
-			<br>	
-			<!--<a href="wip.html"><img src="./img/bearing.png"></a>	<br>
-			<a href="wip.html">Подшипники</a>-->
-			<img src="./img/bearing.png">	<br>
-			<p><strong>ПОДШИПНИКИ</strong></p>
-				<br>		
-			
-			</div>
 
-			<div class="boxp" id ="B">
-					<br>
-			<!--<a href="./data/belts.html">	<img src="./img/belts.png"> </a>
-			<br>
-			<a href="./data/belts.html">Ремни</a> -->
-
-			<img src="./img/belts.png">
-			<br>
-			<p><strong>РЕМНИ</strong></p>
+<!--***************************************************** -->
 
 
-			<br>
-			
-			</div>
+		<hr>
+<!-- cards begin --> 
+		<div class="container-fluid ">
 
-			<div class="boxp">
-					<br>
-				<a href="./data/seal.html"><img src="./img/simmering.png"></a>
-				<br>
-				<a href="./data/seal.html"><strong>Манжеты армированные (Сальники)</strong></a>
-			
-			</div>
+			<div class ="row">
+				<div class = "col-md ">
+					<center>
+						<div class="card" style="width: 14rem;">
+								<img src="./img/bearing.png" class="card-img-top" alt="Подшипники">
+						<div class="card-body">
+    				
+    						<p class="card-text contacts-con"> <br>Подшипники<br> </p>
+    					
+  						</div> 
+  						</div>
+					</center>
+				</div>
 
-			<div class="boxp" id ="B">
-					<br>
-			<!--	<a href="wip.html"><img src="./img/chain.png"></a>
-				<br>
-				<a href="wip.html">Цепи</a> -->
-				
-				<img src="./img/chain.png">
-				<br>
-				<p> <strong>ЦЕПИ</strong></p>
-
-				<br><br><br>
-							
-			</div>
-
-			<div class="boxp">
-					<br>
-				<a href="./data/lockring.html"><img src="./img/stopor.png"></a>
-				<br>
-				<a href="./data/lockring.html"><strong>Стопорные кольца</strong></a>
-				<br><br><br>
-							
-			</div>
-		</div>
-		</section>
-
-
-	<!--second row-->
-
-		<section id= "boxes">
-		<div class="container">
-			<div class="boxp" id ="B">
-			<br>	
-			<!-- <a href="wip.html"><img src="./img/rvd.png"></a>	<br>
-			<a href="wip.html">РВД</a> -->
-
-			<img src="./img/rvd.png">	<br>
-			<p><strong>РВД</strong></p>
-
-				<br>		
-			
-			</div>
-
-			<div class="boxp" id ="B">
-					<br>
-			<!-- <a href="wip.html">	<img src="./img/karchers.png"> </a>
-			<br>
-			<a href="wip.html">Оборудование KARCHER</a>
-			<br>
-			-->
-			<img src="./img/karchers.png">
-			<br>
-			<p><strong>ОБОРУДОВАНИЕ KARCHER</strong></p>
+			<div class = "col-md ">
+					<center>
+						<div class="card" style="width: 14rem;">
+  							<img src="./img/rvd.png" class="card-img-top" alt="Рукава высокого давления">
+  						<div class="card-body">
+    						<p class="card-text contacts-con">Рукава высокого давления </p>
+  				  		</div>
+						</div>
+					</center>
 
 			</div>
 
-			<div class="boxp">
-					<br>
-				<a href="./data/handpallet.html"><img src="./img/handpalletrack.png"></a>
-				<br>
-				<a href="./data/handpallet.html"><strong>Тележки гидравлические</strong> </a>
-			
+			<div class = "col-md ">
+				<center>
+					<div class="card " style="width: 14rem;">
+  					<img src="./img/belts.png" class="card-img-top" alt="Ремни приводные клиновые, поликлиновые,зубчатые, плоские">
+  							<div class="card-body">
+    							<p class="card-text contacts-con"> Ремни приводные <br><br> </p>			   
+  							</div>
+					</div>
+				</center>
 			</div>
 
-			<div class="boxp" id ="B">
-					<br>
-				<!-- <a href="wip.html"><img src="./img/forkliftparts.png"></a>
-				<br>
-				<a href="wip.html">Запасные части к автопогрузчикам</a> -->
-				<img src="./img/forkliftparts.png">
-				<br>
-				<p><strong>ЗАПАСНЫЕ ЧАСТИ К АВТОПОГРУЗЧИКАМ</strong></p>
-
-
-				<br><br><br>
-							
+			<div class = "col-md ">
+				<center>
+					<a href="./data/seal.html">
+						<div class="card" style="width: 14rem;">
+							<img src="./img/simmering.png" class="card-img-top" alt="Сальники манжеты армированные">
+  								<div class="card-body">  					
+    								<p class="card-text contacts-con">Манжеты армированные</p>
+    							</div>
+  						
+						</div>
+					</a>
+				</center>
 			</div>
 
-			<div class="boxp" id ="B">
-					<br>
-			<!--	<a href="wip.html"><img src="./img/rparts.png"></a>
-				<br>
-				<a href="wip.html">Прочее...</a> -->
-
-
-				<img src="./img/rparts.png">
-				<br>
-				<p><strong>ПРОЧЕЕ...</strong></p>
-
-				<br><br><br>
-							
+			<div class = "col-md ">
+				<center>
+					<!-- <a href="#"> -->
+						<div class="card" style="width: 14rem;">
+							<img src="./img/chain.png" class="card-img-top" alt="цепи приводные тяговые роликовые">
+  								<div class="card-body">  					
+    								<p class="card-text contacts-con">Цепи приводные <br><br></p>
+    							</div>
+  						
+						</div>
+<!--					</a> -->
+				</center>
 			</div>
-		</div>
-		</section>
-	
 
 
-	<hr>
+		</div> <!-- end of row 1 -->
 
 
+		<div class ="row">
+				<div class = "col-md ">
+					<center>
+						<a href="./data/lockring.html">
+							<div class="card" style="width: 14rem;">
+								<img src="./img/stopor.png" class="card-img-top" alt="Стопорные кольца">
+							<div class="card-body">
+    				
+    						<p class="card-text contacts-con"> <br>Стопорные кольца</p>
+    					
+  							</div> 
+  							</div>
+  						</a>
+					</center>
+				</div>
+
+			<div class = "col-md ">
+					<center>
+						<div class="card" style="width: 14rem;">
+  							<img src="./img/karchers.png" class="card-img-top" alt="мойки высокого давления">
+  						<div class="card-body">
+    						<p class="card-text contacts-con"><br>Моечное оборудование</p>
+  				  		</div>
+						</div>
+					</center>
+
+			</div>
+
+			<div class = "col-md ">
+				<center>
+					<a href="./data/handpallet.html">
+						<div class="card " style="width: 14rem;">
+  							<img src="./img/handpalletrack.png" class="card-img-top" alt="гидравлические тележки рохли">
+  								<div class="card-body">
+    								<p class="card-text contacts-con"> Гидравлические тележки</p>			   
+  								</div>
+						</div>
+					</a>
+				</center>
+			</div>
+
+			<div class = "col-md ">
+				<center>
+<!--					<a href="#">  -->
+						<div class="card" style="width: 14rem;">
+							<img src="./img/forkliftparts.png" class="card-img-top" alt="запасные части к автопогрузчикам">
+  								<div class="card-body">  					
+    								<p class="card-text contacts-con"><br>Запасные части</p>
+    							</div>
+  						
+						</div>
+<!--					</a>  -->
+				</center>
+			</div>
+
+			<div class = "col-md ">
+				<center>
+<!--					<a href="#"> -->
+						<div class="card" style="width: 14rem;">
+							<img src="./img/rparts.png" class="card-img-top" alt="прочее">
+  								<div class="card-body">  					
+    								<p class="card-text contacts-con"><br>Что еще ...<br></p>
+    							</div>
+  						
+						</div>
+<!--					</a> -->
+				</center>
+			</div>
+
+
+		</div> <!-- end of row 2 -->
+
+	</div> 
+
+    
 
 		<footer>
-			<div class="container" id="footer">
-				<p>
-					&copy; ООО Технокараван 2017 г.Витебск +375 212 366-000
+			<div class="container-fluid footer contacts-con">
+				<p> 
+					<center>&copy; ООО Технокараван 2020 г.Витебск +375 212 366-000</center>
 				</p>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
