@@ -101,6 +101,10 @@ nav {
   border-width: 3px;
   border-radius: 10px; }
 
+#certificate img {
+  cursor: pointer;
+  max-width: 100px; }
+
 .footer {
   background-color: #FF9622; }
 
