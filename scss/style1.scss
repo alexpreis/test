@@ -1,8 +1,10 @@
 $background-color-nav :  #FF9622; //nav bar color
 $text-color-nav-main : #e8491d;
 $text-color-nav-hover : #cccccc;
+$text-color-whitepage : #000000;
 
-$background-color-main : #cc9a07; 
+$background-color-main : #cc9a07;
+$background-color-whitepage : #FFFFFF; 
 $text-color-main : #FFFFFF; //main text color WHITE
 
 
@@ -29,9 +31,7 @@ $p-color : #FF0000; //RED color for testing
 
 
 
-#red{
-	background_color: red;
-}
+
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -58,7 +58,10 @@ header {
 }
 
 
-
+.nav-color {
+	background-color: $background-color-nav ;
+	color : $p-color;
+}
 
 nav {
 	background-color: $background-color-nav;
@@ -140,6 +143,14 @@ nav {
 	}
 }
 
+.whitepage {
+
+	background-color: $background-color-whitepage;
+	color : $text-color-whitepage;
+	ul{
+		padding-left:20px;
+	}
+}
 
 .list-group-item{
 	padding : 1px;
