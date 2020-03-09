@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<script src=" ../scripts/script.js"></script>
+
+	<title>Технокараван | Ремни</title>
+</head>
+
+<!--bread crumb menu -->
+ <nav aria-label="breadcrumb" > 
+	
+  <ol class="breadcrumb nav-color">
+    <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+    <li class="breadcrumb-item"><a href="../products.html">Продукция</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ремни приводные</li>
+  </ol>
+</nav>
+<!--bread crumb menu -->
+
+
+<!-- bar w contacts-->
+
+
+<body>
+	<div class="container-fluid ">
+		<div class ="row">
+			<div class = "col-md-5 d-flex flex-wrap align-content-center ">
+				<div class="contacts" id = "addres">
+					<h2> <i>ООО "ТЕХНОКАРАВАН"</i></h2>
+					<p><img class = "ico" src="../img/ico/evolution1.png" title = "Почтовый адрес" alt="Почта">
+						<i>210017, г.Витебск , ул.Гагарина 68 </i>
+					</p>
+				</div>	
+			</div>
+
+
+
+
+			<div class = "col-md ">
+				<div class="contacts">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<span class= "sr-only" >Городской </span>	
+					<p>
+						<span class="d-inline float-left">
+						 <img class = "ico d-md-none d-lg-block" src="../img/ico/phone.png" title = "Телефон" alt="Телефон">
+						 </span> 
+						 <span class = "contacts-con">
+						 +375 212 366 000
+						 </span>
+					</p>
+				</li>
+				<li class="list-group-item">
+					<span class= "sr-only" >Факс</span>
+					<p>
+						<span class="d-inline float-left">
+						<img class = "ico d-md-none d-lg-block" src="../img/ico/faxsm.png" title = "Факс" alt="Факс">
+					</span>
+					<span class = "contacts-con">
+						+375 212 36 63 71 
+					</span>
+					</p>
+				</li>
+				
+			</ul>
+				</div>
+				
+			</div>
+			<div class = "col-md ">
+
+				<ul class="list-group list-group-flush">
+  						<li class="list-group-item">
+  							<span class= "sr-only" >МТС</span>	
+							<p>
+								<span class="d-inline float-left " >
+								<img class = "ico d-md-none d-lg-block" src="../img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+								</span>
+								<span class = "contacts-con">
+								+375 33 677 25 61
+								</span>
+							</p>
+				</li>	
+  					    </li>
+  						<li class="list-group-item ">
+  							<span class= "sr-only" >МТС</span>
+								<p>
+									<span class="d-inline float-left">
+									<img class = "ico d-md-none d-lg-block" src="../img/ico/icon_mts.png" title = "Телефон МТС" alt="MTC">
+									</span>
+									<span class = "contacts-con">
+									+375 29 710 16 88
+									</span>
+
+
+  						</li>
+
+  						
+  
+				</ul>
+
+				
+			</div>
+
+		</div>
+	</div>
+
+<!-- end bar w contacs -->	
+
+
+	<hr>
+
+<!-- ************************************************ -->
+
+<div class = "container-fluid ">
+	<center>
+		<span class = "contacts-con">
+	 		Ремни приводные
+		</span>
+	</center>	
+
+	<div class = "">
+		<div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<!--***************************************************** -->
+
+
+		<hr>
+<!-- cards begin --> 
+		<div class="container-fluid">
+			    
+     	 
+		
+<!-- end description-->
+    
+<hr>
+<h1>Перевод внутренней или наружной длины ремня в расчетную</h1>
+
+<form>
+
+ 
+
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Выбор длины ремня (внутренняя/наружная) </label>
+    <select name = "typeBelt" class="form-control" id="selectLen">
+      <option value = "1" >Внутренняя длина </option>
+      <option value = "2">Наружная длина </option>
+      <option value = "3">А что есть разные длины? </option>
+     </select>
+  </div>
+<hr>
+
+<div class="form-group" id ="formTypeBelt">
+    <label for="exampleFormControlSelect2">Выбор профиля ремня</label>
+    <select name = "typeBelt" class="form-control" id="selectProfile">
+      <option value = "1" >A </option>
+      <option value = "2">B </option>
+      <option value = "3">C </option>
+      <option value = "4">D </option>
+      <option value = "5">Z </option>
+    </select>
+  </div>
+
+   <form >
+              <input id="beltLength" autocomplete="off" autofocus placeholder="длина в мм" type="text">
+              <button id = "calculate">Посчитать</button>
+          </form>
+
+		
+<hr>
+
+<div class="container-fluid">
+  <label > Результат вычислений:&nbsp&nbsp&nbsp<span id = "calculationResult"></span>
+  </label>
+</div>
+
+
+</form>
+</div>
+    
+		<footer>
+			<div class="container-fluid footer contacts-con">
+				<p> 
+					<center>&copy; ООО Технокараван 2020 г.Витебск +375 212 366-000</center>
+				</p>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
