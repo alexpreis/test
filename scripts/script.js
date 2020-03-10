@@ -26,6 +26,7 @@ var 	selectedLenIndex=0,
 
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
 		
@@ -40,51 +41,55 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
 function selectLen ()
 {
-
-
-
-	
 	
 	selectedLenIndex =document.querySelector('#selectLen').options.selectedIndex;
 	console.log("selectLen function the length index of belt is:  " + selectedLenIndex );
 
-	let elem = document.getElementById("calculationResult");
+//	let elem = document.getElementById("calculationResult");
 	
-	elem.innerHTML = selectedLenIndex;
+//	elem.innerHTML = selectedLenIndex;
+//alert(selectedLenIndex);
 
-	
 }
 
 function beltIndex() 
 {
 
-	
 	selectedProfileBeltIndex =document.querySelector('#selectProfile').options.selectedIndex;	
 	console.log("beltIndex function index of belt type is: " + selectedProfileBeltIndex);
 	
-   
-	
-	let elem = document.getElementById("calculationResult");
-	elem.innerHTML = selectedProfileBeltIndex;
+//	let elem = document.getElementById("calculationResult");
+//	elem.innerHTML = selectedProfileBeltIndex;
 
 }
 
 function calculatePracticalLength()
 
 {	
-
+	let outputField = document.getElementById("calculationResult");	 
 	let practicalLength =0;
 	lengthMm = document.getElementById("beltLength").value;
-	if(lengthMm)
-			console.log("calculatePracticalLength = " + lengthMm);
+
+	if(lengthMm && !isNaN(lengthMm))
+	{
+		console.log("calculatePracticalLength = " + lengthMm);
+		// alert('is digit'+lengthMm);
+	}
+		
+	else
+	 {
+		console.warn('Hren');
+		alert("Ввели не цифры , введите длину ремня в миллиметрах "+ lengthMm);
+		outputField.innerHTML ='';	
+		
+		return;
+	 }
+		 
+		 
 	
-	 else
-	 	console.warn('Hren');
+	
 	
 
 	switch (selectedLenIndex) {
@@ -96,6 +101,9 @@ function calculatePracticalLength()
 				console.log('deltaInner[selectedProfileBeltIndex]='+deltaInner[selectedProfileBeltIndex]);
 				console.log('selectedProfileBeltIndex='+selectedProfileBeltIndex);
 				console.log("Расчетная длина = " + practicalLength);		
+
+				
+				outputField.innerHTML = "Расчетная длина = " + practicalLength + "мм";
 			}
 			
 			break;
@@ -104,12 +112,14 @@ function calculatePracticalLength()
 			{
 				console.log ("Выбрана наружная длина");
 				practicalLength = lengthMm - deltaOuter[selectedProfileBeltIndex];
-				console.log("Расчетная длина = " + practicalLength);		
+				console.log("Расчетная длина = " + practicalLength);	
+				outputField.innerHTML = "Расчетная длина = " + practicalLength +"мм";	
 			}
 			
 			break;
 	
 		default:
+			alert('Почитайте или спросите как измерять ремни...');
 			console.warn ('What are U thinking about when select length????  stupid idiot');
 			break;
 	}

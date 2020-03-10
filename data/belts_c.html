@@ -141,50 +141,59 @@
 		
 <!-- end description-->
     
-<hr>
-<h1>Перевод внутренней или наружной длины ремня в расчетную</h1>
+	<hr>
+	<h1>Перевод внутренней или наружной длины ремня в расчетную</h1>
 
-<form>
 
  
-
-<div class="form-group">
-    <label for="exampleFormControlSelect1">Выбор длины ремня (внутренняя/наружная) </label>
-    <select name = "typeBelt" class="form-control" id="selectLen">
-      <option value = "1" >Внутренняя длина </option>
-      <option value = "2">Наружная длина </option>
-      <option value = "3">А что есть разные длины? </option>
-     </select>
-  </div>
+		<div class="container-fluid">
+			<div class="form-group">
+			    <label for="exampleFormControlSelect1">Выбор длины ремня (внутренняя/наружная) </label>
+			    <select name = "typeBelt" class="form-control" id="selectLen" autocomplete = "off">
+			      <option value = "1" >Внутренняя длина (Li)</option>
+			      <option value = "2">Наружная длина (La)</option>
+			      </select>
+			  </div>
+		</div>
 <hr>
+	<div class="container-fluid">
+			<div class="form-group" id ="formTypeBelt">
+			    <label for="exampleFormControlSelect2">Выбор профиля ремня</label>
+			    <select name = "typeBelt" class="form-control" id="selectProfile" autocomplete = "off"> 
+			    
+			      <option value = "1">Профиль A (AVX13/13A/13AV) размер 13*8 мм </option>
+			      <option value = "2">Профиль B (Б)  размер 17*11 мм</option>
+			      <option value = "3">Профиль С (В)  размер 21*14 мм</option>
+			      <option value = "4">Профиль D (Г)  размер 32*20 мм</option>
+			      <option value = "5">Профиль Z (0)  размер 10*6 мм </option>
+			    </select>
+			  </div>
+	</div>
 
-<div class="form-group" id ="formTypeBelt">
-    <label for="exampleFormControlSelect2">Выбор профиля ремня</label>
-    <select name = "typeBelt" class="form-control" id="selectProfile">
-      <option value = "1" >A </option>
-      <option value = "2">B </option>
-      <option value = "3">C </option>
-      <option value = "4">D </option>
-      <option value = "5">Z </option>
-    </select>
-  </div>
-
-   <form >
-              <input id="beltLength" autocomplete="off" autofocus placeholder="длина в мм" type="text">
-              <button id ="calculate" > Посчитать </button>
-          </form>
+	<div class="container-fluid">
+	   <form >
+	              <input id="beltLength" autocomplete="off" autofocus placeholder="длина ремня в мм" type="text">
+	             
+	          </form>
+	 </div>
+<hr>
+<br>
+	 <div class="container-fluid">
+	 	 <button id ="calculate" > Посчитать </button>
+	 </div>
 
 		
 <hr>
 
-<div class="container-fluid">
-  <label > Результат вычислений:&nbsp&nbsp&nbsp<span id = "calculationResult"></span>
-  </label>
+	<div class="container-fluid">
+
+	  <H5>  <span id = "calculationResult"></span>
+	  </H5>
+
+	</div>
+
 </div>
 
-
-</form>
-</div>
     
 		<footer>
 			<div class="container-fluid footer contacts-con">
