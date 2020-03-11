@@ -1,4 +1,4 @@
-#addres h2, #addres p, .contacts-con, .footer {
+#addres h2, #addres p, .contacts-con, .overlap-text, .footer {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: 900; }
 
@@ -60,6 +60,11 @@ nav {
 
 .contacts-con {
   font-style: italic;
+  color: #FFFFFF; }
+
+.overlap-text {
+  font-style: italic;
+  font-weight: 100;
   color: #FFFFFF; }
 
 #text-main-page {

@@ -1,4 +1,4 @@
-alert ("W T F");
+//alert ("W T F");
 
 /*
 val TypeOfBelt = arrayOf("z","a","b","20","c","25","d","38","e", "spz","spa","spb","spc","xpz","xpa","xpb")

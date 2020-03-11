@@ -118,6 +118,13 @@ nav {
 	color : $text-color-main;	
 }
 
+.overlap-text {
+	@extend %text-shadows;
+	font-style : italic;
+	font-weight: 100;
+	color : $text-color-main;	
+}
+
 #text-main-page{
 	color :  $text-color-main;
 	font-style: italic;
