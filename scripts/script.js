@@ -45,7 +45,7 @@ function selectLen ()
 {
 	
 	selectedLenIndex =document.querySelector('#selectLen').options.selectedIndex;
-	console.log("selectLen function the length index of belt is:  " + selectedLenIndex );
+	//console.log("selectLen function the length index of belt is:  " + selectedLenIndex );
 	//document.title ="selectLen function the length ";
 
 //	let elem = document.getElementById("calculationResult");
@@ -59,7 +59,7 @@ function beltIndex()
 {
 
 	selectedProfileBeltIndex =document.querySelector('#selectProfile').options.selectedIndex;	
-	console.log("beltIndex function index of belt type is: " + selectedProfileBeltIndex);
+//	console.log("beltIndex function index of belt type is: " + selectedProfileBeltIndex);
 	
 //	let elem = document.getElementById("calculationResult");
 //	elem.innerHTML = selectedProfileBeltIndex;
@@ -81,7 +81,7 @@ function calculatePracticalLength()
 		
 	else
 	 {
-		console.warn('Hren');
+		
 		alert("Ввели не цифры , введите длину ремня в миллиметрах "+ lengthMm);
 		outputField.innerHTML ='';	
 		
@@ -96,12 +96,12 @@ function calculatePracticalLength()
 	switch (selectedLenIndex) {
 		case 0:
 			{
-				console.log ("Выбрана внутренняя длина");
+				//console.log ("Выбрана внутренняя длина");
 				practicalLength =  Number(lengthMm)  + Number(deltaInner[selectedProfileBeltIndex]);
-				console.log('lengthMm='+lengthMm);
-				console.log('deltaInner[selectedProfileBeltIndex]='+deltaInner[selectedProfileBeltIndex]);
-				console.log('selectedProfileBeltIndex='+selectedProfileBeltIndex);
-				console.log("Расчетная длина = " + practicalLength);		
+				//console.log('lengthMm='+lengthMm);
+				//console.log('deltaInner[selectedProfileBeltIndex]='+deltaInner[selectedProfileBeltIndex]);
+				//console.log('selectedProfileBeltIndex='+selectedProfileBeltIndex);
+				//console.log("Расчетная длина = " + practicalLength);		
 
 				
 				outputField.innerHTML = "Расчетная длина = " + practicalLength + "мм";
@@ -111,7 +111,7 @@ function calculatePracticalLength()
 
 		case 1:
 			{
-				console.log ("Выбрана наружная длина");
+				//console.log ("Выбрана наружная длина");
 				practicalLength = lengthMm - deltaOuter[selectedProfileBeltIndex];
 				console.log("Расчетная длина = " + practicalLength);	
 				outputField.innerHTML = "Расчетная длина = " + practicalLength +"мм";	
