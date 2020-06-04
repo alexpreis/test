@@ -46,6 +46,7 @@ function selectLen ()
 	
 	selectedLenIndex =document.querySelector('#selectLen').options.selectedIndex;
 	console.log("selectLen function the length index of belt is:  " + selectedLenIndex );
+	//document.title ="selectLen function the length ";
 
 //	let elem = document.getElementById("calculationResult");
 	

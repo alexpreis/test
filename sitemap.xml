@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		
+<url>
+	<loc>http://www.tehnokaravan.com/</loc>
+	<lastmod>2020-03-11T11:21:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/products.html</loc>
+	<lastmod>2020-03-11T11:21:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/service.html</loc>
+	<lastmod>2020-03-11T11:21:40+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/deliveryandpayment.html</loc>
+	<lastmod>2020-03-11T11:21:41+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/contacts.html</loc>
+	<lastmod>2020-03-11T11:21:41+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/data/belts_c.html</loc>
+	<lastmod>2020-03-11T11:21:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/index.html</loc>
+	<lastmod>2020-03-11T11:21:42+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/data/seal.html</loc>
+	<lastmod>2020-03-11T11:21:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/data/lockring.html</loc>
+	<lastmod>2020-03-11T11:21:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.tehnokaravan.com/data/handpallet.html</loc>
+	<lastmod>2020-03-11T11:21:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
